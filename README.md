@@ -4,6 +4,8 @@ This template is destined for the schools of the Toulouse INP group.
 
 ## Usage
 The template is available on the typst online editor via the following link: Not yet :(
+
+
 The template can also be used locally:
 
 ### First solution: with a relative path
@@ -103,8 +105,8 @@ The template also automatically manages appendices in another typst file:
 #appendices(title: "Table of appendices", show-outline: true, include "annexe.typ")
 ```
 
-title` is the title of the section displaying the appendices table
-show-outline` (default: **true**) enables this table to be displayed or not
+`title` is the title of the section displaying the appendices table
+`show-outline` (default: **true**) enables this table to be displayed or not
 
 **IMPORTANT** For the code to be successful, the following code must be added just after `#show: tlseinp.with(...)`.
 ```typst
