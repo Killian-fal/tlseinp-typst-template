@@ -10,7 +10,7 @@ The template can also be used locally:
 1. Clone / download the zip file of this repo
 2. Create a `new-report.typ` file at the project root
 3. Add the following code: 
-```tyspt
+```typst
 #import "tlseinp.typ": *
 
 #show: tlseinp.with(
@@ -30,7 +30,7 @@ The list of parameters is available in the [documentation section](#documentatio
 3. Go to the package folder and copy the code from this repo into it
 4. Create a `new-report.typ` file
 5. Add the following code: 
-```tyspt
+```typst
 #import "@local/tlseinp-report:0.1.0": *
 
 #show: tlseinp.with(
@@ -58,8 +58,8 @@ A list of examples is available [here](examples/).
 | group           | Text displayed above the author on the first page                                                                 | any string                                                                      |
 | year            | Text displayed below author on first page                                                                         | any string                                                                      |
 | class           | Text displayed below author on first page                                                                         | any string                                                                      |
-| formation-image | Image displayed at top right of first page (e.g.  [example 2](examples/example2/))                                | formation.[N7, A7, ENSAT, PREP-TRANSI, FC, LA_PREPA, INP] or custom tyspt image |
-| project-image   | Image displayed at top left of first page (e.g.  [example 2](examples/example2/))                                 | formation.[N7, A7, ENSAT, PREP-TRANSI, FC, LA_PREPA, INP] or custom tyspt image |
+| formation-image | Image displayed at top right of first page (e.g.  [example 2](examples/example2/))                                | formation.[N7, A7, ENSAT, PREP-TRANSI, FC, LA_PREPA, INP] or custom typst image |
+| project-image   | Image displayed at top left of first page (e.g.  [example 2](examples/example2/))                                 | formation.[N7, A7, ENSAT, PREP-TRANSI, FC, LA_PREPA, INP] or custom typst image |
 | lang            | Report language                                                                                                   | fr, en, etc.. (see typst documentation)                                         |
 
 ### Additional functionality
