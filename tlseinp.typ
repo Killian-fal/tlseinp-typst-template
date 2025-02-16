@@ -1,7 +1,7 @@
 #let formation = (
   PREP-TRANSI: image("media/Prepa-t.jpg"),
   A7: image("media/Toulouse-INP-A7.jpg"),
-  ENSAT: image("media/Toulouse-INP-Ensat.jpg"),
+  AGRO_TOULOUSE: image("media/Toulouse-INP-AgroToulouse.jpg"),
   FC: image("media/Toulouse-INP-FC.jpg"),
   LA_PREPA: image("media/Toulouse-INP-LaPrepa.jpg"),
   N7: image("media/Toulouse-INP-N7.jpg"),
