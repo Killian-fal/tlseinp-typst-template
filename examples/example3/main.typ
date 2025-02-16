@@ -13,8 +13,8 @@
 
 #outline(indent: true)
 #pagebreak()
-#figures(headingName: "Table des figures")
-#figures(kind: list, headingName: "Table des listings")
+#figures(heading-name: "Table des figures")
+#figures(kind: list, heading-name: "Table des listings")
 #pagebreak()
 
 = Introduction
@@ -221,7 +221,7 @@ Tous les tests ont un préfixe à leur nom "*testSocket*".
   "Custom04",[Vérifie l’enchaînement de in / out fonctionne correctement à travers trois canaux et trois processus],
 )
 
-#deliverables(headingName: "Livrables", 
+#deliverables(heading-name: "Livrables", 
   (
     "sources.zip": "Fichier contenant le code source du projet",
   )

@@ -11,6 +11,6 @@ disciplines = ["engineering", "computer-science", "mathematics", "physics"]
 description = "Template for Toulouse INP students."
 
 [template]
-path = ""
-entrypoint = "tlseinp.typ"
+path = "template"
+entrypoint = "main.typ"
 thumbnail = "thumbnail.jpg"

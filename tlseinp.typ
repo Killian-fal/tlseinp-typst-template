@@ -102,8 +102,8 @@
 }
 
 // show a list of livrables
-#let deliverables(headingName: "Deliverables", dict) = {
-  [= #headingName]
+#let deliverables(heading-name: "Deliverables", dict) = {
+  [= #heading-name]
   for (name, desc) in dict {
     list(
       [*#name* - #desc],
@@ -112,14 +112,14 @@
 }
 
 // show the list of figures in the document
-#let figures(headingName: "Table of figures", kind: image) = {  
+#let figures(heading-name: "Table of figures", kind: image) = {  
   // reset outline style
   show outline.entry.where(level: 1): it => text([#it.body #box(width: 1fr, repeat[.]) #it.page])
 
   if kind == none {
-    outline(target: figure, title: [#headingName])
+    outline(target: figure, title: [#heading-name])
   } else {
-    outline(target: figure.where(kind: kind), title: [#headingName])
+    outline(target: figure.where(kind: kind), title: [#heading-name])
   }
 }
 
