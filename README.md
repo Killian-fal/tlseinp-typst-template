@@ -13,9 +13,10 @@ The template can also be used locally:
 2. Create a `new-report.typ` file at the project root
 3. Add the following code: 
 ```typst
-#import "tlseinp.typ": *
+#import "src/tlseinp.typ"
 
-#show: tlseinp.with(
+// basic or enseeiht or ensiacet
+#show: tlseinp.basic.with(
   //TODO: complete with your parameters
 ) 
 
@@ -35,7 +36,8 @@ The list of parameters is available in the [documentation section](#documentatio
 ```typst
 #import "@local/tlseinp-report:0.1.0": *
 
-#show: tlseinp.with(
+// basic or enseeiht or ensiacet
+#show: tlseinp-report.basic.with(
   //TODO: complete with your parameters
 ) 
 
@@ -51,6 +53,8 @@ A list of examples is available [here](examples/).
 
 ## Documentation <a id="documentation-section"></a>
 
+### basic
+
 | Parameter       | Description                                                                                                       | Example                                                                         |
 |-----------------|-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
 | title           | report title displayed on first page                                                                              | any string                                                                      |
@@ -64,26 +68,44 @@ A list of examples is available [here](examples/).
 | project-image   | Image displayed at top left of first page (e.g.  [example 2](examples/example2/))                                 | formation.[N7, A7, ENSAT, PREP-TRANSI, FC, LA_PREPA, INP] or custom typst image |
 | lang            | Report language                                                                                                   | fr, en, etc.. (see typst documentation)                                         |
 
+### enseeiht
+
+| Parameter       | Description                                                                                                       | Example                                                                         |
+|-----------------|-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| title           | report title displayed on first page                                                                              | any string                                                                      |
+| subtitle        | report subtitle displayed on first page                                                                           | any string                                                                      |
+| author          | Text displayed at the top right of all report pages and on the first page (e.g.  [example 3](examples/example3/)) | any string                                                                      |
+| lang            | Report language                                                                                                   | fr, en, etc.. (see typst documentation)                                         |
+
+### ensiacet
+
+| Parameter       | Description                                                                                                       | Example                                                                         |
+|-----------------|-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| title           | report title displayed on first page                                                                              | any string                                                                      |
+| subtitle        | report subtitle displayed on first page                                                                           | any string                                                                      |
+| author          | Text displayed at the top right of all report pages and on the first page (e.g.  [example 4](examples/example4/)) | any string                                                                      |
+| lang            | Report language                                                                                                   | fr, en, etc.. (see typst documentation)                                         |
+
 ### Additional functionality
 The termplate can display a table of 
 - of all images/lists:
 ```typst
-#figures(kind: none, headingName: "Table of all :)")
+#tlseinp-repor.figures(kind: none, headingName: "Table of all :)")
 ```
 
 - all images without list:
 ```typst
-#figures()
+#tlseinp-repor.figures()
 ```
 
 - all lists without image:
 ```typst
-#figures(kind: list, headingName: "Table of listings")
+#tlseinp-repor.figures(kind: list, headingName: "Table of listings")
 ```
 
 The template also automatically manages a list of deliverables:
 ```typst
-#deliverables(
+#tlseinp-repor.deliverables(
   (
     "tests.pdf": "file showing our tests",
     "wow.pdf": "Wow !",
@@ -91,7 +113,7 @@ The template also automatically manages a list of deliverables:
 )
 
 // or with custom heading name
-#deliverables(headingName: "Custom Deliverables",
+#tlseinp-repor.deliverables(headingName: "Custom Deliverables",
   (
     "tests.pdf": "file showing our tests",
     "wow.pdf": "Wow !",
@@ -102,7 +124,7 @@ The template also automatically manages a list of deliverables:
 The template also automatically manages appendices in another typst file:
 ```typst
 = Appendices <appendix>
-#appendices(title: "Table of appendices", show-outline: true, include "annexe.typ")
+#tlseinp-repor.appendices(title: "Table of appendices", show-outline: true, include "annexe.typ")
 ```
 
 `title` is the title of the section displaying the appendices table

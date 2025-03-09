@@ -1,20 +1,16 @@
-#import "@local/tlseinp-report:0.1.0": *
+#import "@local/tlseinp-report:0.1.0"
 
-#show: tlseinp.with(
+#show: tlseinp-report.enseeiht.with(
   title: "Projet intergicielle",
-  subtitle: "Rapport",
-  page-header: "Rapport projet intergiciel",
-  author: "xx XX, yy YY",
-  year: "2024",
-  class: "FISA SN 2A",
-  formation-image: formation.N7,
+  subtitle: "Rapport - Février 2025",
+  author: "Killian Falguiere",
   lang: "fr",
 ) 
 
-#outline(indent: true)
+#outline()
 #pagebreak()
-#figures(heading-name: "Table des figures")
-#figures(kind: list, heading-name: "Table des listings")
+#tlseinp-report.figures(heading-name: "Table des figures")
+#tlseinp-report.figures(kind: list, heading-name: "Table des listings")
 #pagebreak()
 
 = Introduction
@@ -221,7 +217,7 @@ Tous les tests ont un préfixe à leur nom "*testSocket*".
   "Custom04",[Vérifie l’enchaînement de in / out fonctionne correctement à travers trois canaux et trois processus],
 )
 
-#deliverables(heading-name: "Livrables", 
+#tlseinp-report.deliverables(heading-name: "Livrables", 
   (
     "sources.zip": "Fichier contenant le code source du projet",
   )

@@ -1,6 +1,6 @@
-#import "@local/tlseinp-report:0.1.0": *
+#import "@local/tlseinp-report:0.1.0"
 
-#show: tlseinp.with(
+#show: tlseinp-report.basic.with(
   title: "Example 1",
   subtitle: "Toulouse INP Template",
   page-header: "Example 1 - Toulouse INP template",
@@ -8,15 +8,15 @@
   group: none,
   year: "2024",
   class: "FISA SN 2A",
-  formation-image: formation.N7,
+  formation-image: tlseinp-report.formation.N7,
 ) 
 
 #context {
   outline(target: selector(heading).before(locate(<appendix>)), indent: auto)
 }
 
-#figures()
-#figures(kind: list, heading-name: "Table of listings")
+#tlseinp-report.figures()
+#tlseinp-report.figures(kind: list, heading-name: "Table of listings")
 
 #pagebreak()
 
@@ -69,13 +69,13 @@ public static void main(String[] args) {
 #pagebreak()
 
 @logo is an example of `image integration` #footnote[https://typst.app/app] <fn> with image @fn.
-#figure(caption: [N7 logo], formation.N7)<logo>
+#figure(caption: [N7 logo], tlseinp-report.formation.N7)<logo>
 
 = Summary
 
 Thanks for using !
 
-#deliverables(
+#tlseinp-report.deliverables(
   (
     "tests.pdf": "file showing our tests",
     "wow.pdf": "Wow !",
@@ -83,4 +83,4 @@ Thanks for using !
 )
 
 = Appendices <appendix>
-#appendices(include "annexe.typ")
+#tlseinp-report.appendices(include "annexe.typ")

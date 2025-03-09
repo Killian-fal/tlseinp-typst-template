@@ -1,7 +1,7 @@
-#import "@local/tlseinp-report:0.1.0": *
+#import "@local/tlseinp-report:0.1.0"
 
-#show: tlseinp.with(
-  project-image: formation.AGRO_TOULOUSE,
+#show: tlseinp-report.basic.with(
+  project-image: tlseinp-report.formation.AGRO_TOULOUSE,
 ) 
 
 #context {

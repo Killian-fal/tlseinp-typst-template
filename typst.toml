@@ -1,7 +1,7 @@
 [package]
 name = "tlseinp-report"
 version = "0.1.0"
-entrypoint = "tlseinp.typ"
+entrypoint = "src/tlseinp.typ"
 authors = ["Killian Falguiere <@killian-fal>"]
 license = "Apache-2.0"
 categories = ["report"]
